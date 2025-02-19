@@ -1,0 +1,88 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>MyBlog</servlet-name>
+		<jsp-file>/my_blogs.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MyBlog</servlet-name>
+		<url-pattern>/my_blogs</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoadBlogs</servlet-name>
+		<jsp-file>/load_blogs.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoadBlogs</servlet-name>
+		<url-pattern>/load_blogs</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Profile</servlet-name>
+		<jsp-file>/profile.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Profile</servlet-name>
+		<url-pattern>/profile</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>ShowBlogs</servlet-name>
+		<jsp-file>/show_blog.jsp</jsp-file>
+	</servlet>	
+	
+	<servlet-mapping>
+		<servlet-name>ShowBlogs</servlet-name>
+		<url-pattern>/show_blog</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+		<filter-name>LoggedinUsersFilter</filter-name>
+		<filter-class>com.learnonline.filters.LoggedinUsersFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoggedinUsersFilter</filter-name>
+		<url-pattern>/common/admin-navbar.jsp</url-pattern>
+		<url-pattern>/profile</url-pattern>
+		<url-pattern>/profile.jsp</url-pattern>
+		<url-pattern>/add_blog</url-pattern>
+		<url-pattern>/add_blog.jsp</url-pattern>
+		<url-pattern>/my_blogs</url-pattern>
+		<url-pattern>/my_blogs.jsp</url-pattern>
+		<url-pattern>/load_blogs</url-pattern>
+		<url-pattern>/load_blogs.jsp</url-pattern>
+		<url-pattern>/edit-profile</url-pattern>
+		<url-pattern>/delete_blog </url-pattern>
+		<url-pattern>/update_blog</url-pattern>
+		<url-pattern>/update_blog.jsp</url-pattern>
+		<url-pattern>/show_blog</url-pattern>
+		<url-pattern>/show_blog.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>LoggedOutUsersFilter</filter-name>
+		<filter-class>com.learnonline.filters.LoggedOutUsersFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>LoggedOutUsersFilter</filter-name>
+		<url-pattern>/</url-pattern>
+		<url-pattern>/index.jsp</url-pattern>
+		<url-pattern>/login</url-pattern>
+		<url-pattern>/login.jsp</url-pattern>
+		<url-pattern>/register</url-pattern>
+		<url-pattern>/register.jsp</url-pattern>
+	</filter-mapping>
+</web-app>

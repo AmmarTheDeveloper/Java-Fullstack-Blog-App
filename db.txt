@@ -1,0 +1,11 @@
+1.USER TABLE 
+CREATE TABLE user (id int primary key auto_increment, name varchar(255) not null, email varchar(255) not null unique, password varchar(255) not null, gender varchar(10) not null, about varchar(1000) not null default "this is about me",  rdate timestamp not null default current_timestamp, profile varchar(100) not null default "default.png");
+
+2.CATEGORIES TABLE
+CREATE TABLE categories (cid int primary key auto_increment, name varchar(100) not null, description varchar(500) not null);
+
+3.POSTS TABLE
+CREATE TABLE posts (pid int primary key auto_increment, title varchar(150) not null, description longtext not null,content longtext not null, thumbnail varchar(100) not null,date timestamp not null default current_timestamp, cid int not null, createdBy int not null, foreign key(cid) references categories(cid), foreign key(createdBy) references user(id));
+
+4.LIKES TABLE
+CREATE TABLE likes (lid int primary key auto_increment, pid int not null, uid int not null, foreign key(pid) references posts(pid), foreign key(uid) references user(id));

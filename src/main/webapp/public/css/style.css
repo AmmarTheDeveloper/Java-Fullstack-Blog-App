@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.primary-bg {
+	background-color: black !important;
+}
+
+.banner-bg {
+clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 95%, 59% 100%, 21% 94%, 0 100%, 0 0);
+ }
