@@ -30,7 +30,7 @@ This is a full-stack blog application built using Servlet, JSP, AJAX, SweetAlert
 
 ## Installation & Setup
 ### Prerequisites:
-- Java Development Kit (JDK) installed
+- Java Development Kit (JDK v21.0.3) installed
 - Apache Tomcat Server(v10.1) installed
 - MySQL(v8.0) Database installed and running
 
@@ -75,4 +75,3 @@ For any questions or support, reach out via email at [ammarthedeveloper@gmail.co
 
 ---
 Enjoy coding and happy blogging! 🚀
-
