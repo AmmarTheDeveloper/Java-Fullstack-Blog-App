@@ -71,7 +71,7 @@ This is a full-stack blog application built using Servlet, JSP, AJAX, SweetAlert
 This project is open-source and available under the [MIT License](LICENSE).
 
 ## Contact
-For any questions or support, reach out via email at [ammarthedeveloper@gmail.com] or create an issue on GitHub.
+For any questions or support, reach out via email at [ammarthedeveloper@gmail.com](ammarthedeveloper@gmail.com) or create an issue on GitHub.
 
 ---
 Enjoy coding and happy blogging! 🚀
